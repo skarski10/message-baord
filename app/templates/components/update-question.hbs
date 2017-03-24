@@ -1,0 +1,25 @@
+{{#if updateQuestion}}
+  <h1>Update Question {{question.title}}</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        {{input placeholder="Name" value=name id="name"}}
+      </div>
+      <div class="form-group">
+        {{input placeholder="Title" value=title id="title"}}
+      </div>
+      <div class="form-group">
+        {{textarea placeholder="question" value=question id="question"}}
+      </div>
+      <div class="form-group">
+        {{input placeholder="Date" value=date id="date"}}
+      </div>
+      <div class="form-group">
+        {{input placeholder="Image URL" value=image id="image"}}
+      </div>
+      <button {{action 'update' question}}>Update</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateQuestion'}}>Update Question</button>
+{{/if}}
