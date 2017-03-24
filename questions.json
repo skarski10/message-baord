@@ -1,0 +1,13 @@
+{
+  "questions": [{
+    "name": "Peter Parker",
+    "title": "Spider-Man's Power",
+    "question": "Can someone tell me all of Spider-Man's powers and abilities?",
+    "date": "March 19th, 2017"
+  }, {
+    "name": "Mary-Jane Watson",
+    "title": "Spider-Man Power Levels",
+    "question": "How strong is Spider-Man? I understand he has the propotional stregth of a spider, but what does that mean?",
+    "date": "March 21st, 2017"
+    }]
+}

@@ -1,1 +1,5 @@
-{{outlet}}
+<div class="row">
+  {{#each model.questions as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</div>
