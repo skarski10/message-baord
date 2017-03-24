@@ -1,9 +1,12 @@
-<div class="row">
-  {{new-question saveQuestion="saveQuestion"}}
-</div>
+<div class="container" id="main-page">
+  <div class="row">
+    {{new-question saveQuestion="saveQuestion"}}
+  </div>
 
-<div class="row">
-  {{#each model.questions as |question|}}
+  <div class="row">
+    {{#each model.questions as |question|}}
     {{question-tile question=question}}
-  {{/each}}
+    {{/each}}
+  </div>
+
 </div>

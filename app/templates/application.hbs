@@ -2,28 +2,20 @@
   <!-- <div class="floating-header container"> -->
 
   {{#link-to 'index'}}
-  <header class= "jumbotron">
+  <header class= "jumbotron" id="site-title">
+
   </header>
   {{/link-to}}
-  <nav class="navbar navbar-default" id="nav-bar">
+  <!-- <nav class="navbar navbar-default" id="nav-bar">
     <div class="container-fluid">
-      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li>{{#link-to 'index'}}Home{{/link-to}}</li>
-          <!-- <li>{{#link-to 'question'}}Questions{{/link-to}}</li> -->
+          <li>{{#link-to 'index'}}<img id="home-image" src="http://2.bp.blogspot.com/-CfcNNFkQgKg/VVA2-IZrYMI/AAAAAAAACW4/2UKFilGssf0/s1600/Marvel-comics-logo-vector.png" alt="" />{{/link-to}}</li>
         </ul>
-        <form class="navbar-form navbar-right">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-<!-- </div> -->
-  <div class="row">
+      </div>
+    </div>
+  </nav> -->
+  <div class="row" id="testing">
     {{outlet}}
   </div>
   <hr>
