@@ -1,6 +1,9 @@
-{{#link-to 'question'}}
-{{question.title}}
+{{#link-to 'question' question.id}}
+<div class="row title">
+  <h2>{{question.title}}</h2>
+</div>
+
 <div class="row">
-  {{question.name}} | {{question.date}}
+  <span class="name">{{question.name}}</span> | <span class="date">{{question.date}}</span>
 </div>
 {{/link-to}}

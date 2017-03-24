@@ -1,0 +1,22 @@
+<div class="row" id="question">
+  <div class="row title">
+    {{question.title}}
+  </div>
+  <div class="col-md-4">
+    <span class="name">{{question.name}}</span><br>
+    <span class="date">{{question.date}}</span>
+  </div>
+  <div class="col-md-8">
+    <span class="question">{{question.question}}</span>
+  </div>
+</div>
+
+<div class="row" id="answers">
+  <h2> Answers </h2>
+  {{new-answer saveAnswer="saveAnswer" question=model}}
+  <div class="row">
+    {{#each blog.answers as |answer|}}
+      {{answer-tile answer=answer}}
+    {{/each}}
+  </div>
+</div>

@@ -1,5 +1,5 @@
-{{#if updateQuestion}}
-  <h1>Update Question {{question.title}}</h1>
+{{#if addQuestion}}
+  <h1>New Question</h1>
   <div>
     <form>
       <div class="form-group">
@@ -14,9 +14,9 @@
       <div class="form-group">
         {{input placeholder="Date" value=date id="date"}}
       </div>
-      <button {{action 'update' question}}>Update</button>
+      <button {{action 'saveQuestion'}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateQuestion'}}>Update Question</button>
+  <button {{action 'questionForm'}}>New Question</button>
 {{/if}}

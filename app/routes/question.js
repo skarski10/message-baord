@@ -13,7 +13,7 @@ export default Ember.Route.extend({
         return question.save();
       });
       this.transitionTo('question', question);
-    }
+    },
 
     update(question, params) {
     Object.keys(params).forEach(function(key) {
@@ -23,7 +23,6 @@ export default Ember.Route.extend({
     });
     question.save();
     this.transitionTo('admin');
-
-  },
+    },
   }
 });

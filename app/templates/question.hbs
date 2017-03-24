@@ -1,20 +1,6 @@
-<div class="row" id="question">
-  {{question.title}}
-  <div class="col-md-4">
-    {{question.name}}<br>
-    {{question.date}}
-  </div>
-
-  <div class="col-md-8">
-    {{question.question}}
-  </div>
-  <div class="row">
-    {{update-question question=model update="update"}}
-  </div>
+<div class="row">
+  {{update-question question=model update="update"}}
 </div>
-
-<div class="row" id="answers">
-  <div class="row">
-    {{new-answer saveAnswer="saveAnswer" question=model}}
-  </div>
+<div class="row">
+  {{question-detail question=model}}
 </div>
