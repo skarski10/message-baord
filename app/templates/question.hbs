@@ -8,15 +8,13 @@
   <div class="col-md-8">
     {{question.question}}
   </div>
+  <div class="row">
+    {{update-question question=model update="update"}}
+  </div>
 </div>
 
 <div class="row" id="answers">
-  <div class="col-md-4">
-    {{answer.name}}<br>
-    {{answer.date}}
-  </div>
-
-  <div class="col-md-8">
-    {{answer.answer}}
+  <div class="row">
+    {{new-answer saveAnswer="saveAnswer" question=model}}
   </div>
 </div>
