@@ -23,14 +23,19 @@
 }
 
 #footer {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
 
 }
 
 .name, .date {
   font-family: "American Captain";
-  font-size: 20px;
+  font-size: 18px;
   color: lightgray;
+}
+
+.question {
+  color: lightgray;
+  font-size: 22px;
 }
 
 .jumbotron {
@@ -45,19 +50,6 @@
   color: lightgray;
   height: 18vh;
 }
-
-/*#footer {
-  text-align: center;
-  background-image: url("img/background3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: inherit;;
-  background-size: cover;
-  box-shadow: -10px 10px 10px;
-  /*opacity: 0.9;*/
-  color: lightgray;
-  height: 15vh;
-}*/
 
 img {
   width: 20%;
@@ -78,4 +70,17 @@ body {
 
 #home-image {
   width: 9%;
+}
+
+h1, h2, h3 {
+  color: lightgray;
+}
+
+#answers {
+  font-size: 36px;
+  text-shadow: 2px 2px 2px gray;
+  text-align: center;
+  font-family: "The Amazing Spider-Man";
+  color: red;
+  padding: 10px;
 }

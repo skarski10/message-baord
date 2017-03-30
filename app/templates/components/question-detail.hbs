@@ -7,15 +7,15 @@
     <span class="date">{{question.date}}</span>
   </div>
   <div class="col-md-8">
-    <span class="question">{{question.question}}</span>
+    <span class="question">{{question.post}}</span>
   </div>
 </div>
+<hr>
 
-<div class="row" id="answers">
-  <h2> Answers </h2>
-  {{new-answer saveAnswer="saveAnswer" question=model}}
+<div class="row">
+  <h2 id="answers"> Answers </h2>
   <div class="row">
-    {{#each blog.answers as |answer|}}
+    {{#each question.answers as |answer|}}
       {{answer-tile answer=answer}}
     {{/each}}
   </div>
