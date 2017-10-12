@@ -1,22 +1,35 @@
-<div class="row" id="question">
+<div class="container">
   <div class="row title">
     {{question.title}}
   </div>
-  <div class="col-md-4">
-    <span class="name">{{question.name}}</span><br>
-    <span class="date">{{question.date}}</span>
+  <div class="row question-data">
+    <div class="col-xs-3">
+      <div class="name">
+        <p>{{question.name}}</p>
+      </div>
+      <div class="date">
+        <p>{{question.date}}</p>
+      </div>
+    </div>
+    <div class="col-xs-9">
+      <div class="question">
+        <p>{{question.post}}</p>
+      </div>
+    </div>
   </div>
-  <div class="col-md-8">
-    <span class="question">{{question.post}}</span>
-  </div>
-</div>
-<hr>
-
-<div class="row">
-  <h2 id="answers"> Answers </h2>
   <div class="row">
-    {{#each question.answers as |answer|}}
+    {{update-question question=model update="update"}}
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h2 id="answers"> Answers </h2>
+    <div class="row">
+      {{#each question.answers as |answer|}}
       {{answer-tile answer=answer}}
-    {{/each}}
+      <br>
+      {{/each}}
+    </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
-{{#if updateQuestion}}
+<div class="row" id="question-update">
+  {{#if updateQuestion}}
   <h1>Update Question {{question.title}}</h1>
   <div>
     <form>
@@ -17,6 +18,9 @@
       <button {{action 'update' question}}>Update</button>
     </form>
   </div>
-{{else}}
-  <button {{action 'updateQuestion'}}>Update Question</button>
-{{/if}}
+  {{else}}
+  <div class="row">
+    <button class="btn" id="update-button" {{action 'updateQuestion'}}>Update Question</button>
+  </div>
+  {{/if}}
+</div>

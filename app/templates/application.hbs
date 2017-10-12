@@ -1,25 +1,59 @@
-<div class= "container">
-  <!-- <div class="floating-header container"> -->
-
-  {{#link-to 'index'}}
-  <header class= "jumbotron" id="site-title">
-
-  </header>
-  {{/link-to}}
-  <!-- <nav class="navbar navbar-default" id="nav-bar">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li>{{#link-to 'index'}}<img id="home-image" src="http://2.bp.blogspot.com/-CfcNNFkQgKg/VVA2-IZrYMI/AAAAAAAACW4/2UKFilGssf0/s1600/Marvel-comics-logo-vector.png" alt="" />{{/link-to}}</li>
-        </ul>
-      </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">{{#link-to 'index'}}Marvel Message Board{{/link-to}}</a>
     </div>
-  </nav> -->
-  <div class="row" id="testing">
-    {{outlet}}
-  </div>
-  <hr>
-  <footer id="footer">
 
-  </footer>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">{{#link-to 'index'}}Home{{/link-to}} <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li><a>
+          {{#bs-dropdown as |dd|}}
+          {{#dd.toggle}}Dropdown <span class="caret"></span>{{/dd.toggle}}
+          {{#dd.menu as |ddm|}}
+            {{#ddm.item}}
+              {{#ddm.link-to "index"}}Something{{/ddm.link-to}}
+            {{/ddm.item}}
+            {{ddm.divider}}
+            {{#ddm.item}}
+              {{#ddm.link-to "index"}}Something different{{/ddm.link-to}}
+            {{/ddm.item}}
+          {{/dd.menu}}
+        {{/bs-dropdown}}</a>
+      </li>
+  </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class= "jumbotron">
+  {{#link-to 'index'}}
+  <p id="site-title">Marvel Message Board</p>
+  {{/link-to}}
 </div>
+<div class="row" id="testing">
+  {{outlet}}
+</div>
+
+<footer id="footer">
+
+</footer>

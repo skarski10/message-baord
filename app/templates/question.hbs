@@ -1,12 +1,8 @@
-<div class="" id="question-page">
-  <div class="row">
-    {{update-question question=model update="update"}}
-  </div>
-  <div class="row">
+<div class="container" id="question-page">
+  <div class="row" id="questions">
     {{question-detail question=model}}
   </div>
-  <div class="row">
+  <div class="row" id="answers">
     {{new-answer saveAnswer="saveAnswer" question=model}}
   </div>
-
 </div>

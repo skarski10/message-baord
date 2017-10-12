@@ -1,11 +1,32 @@
+.jumbotron {
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  /*height: 18vh;*/
+  /*background-image: url("img/background3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: inherit;;
+  background-size: cover;*/
+  /*box-shadow: -10px 10px 10px;*/
+}
+
+#site-title{
+ font-size: 50px;
+ color: lightgray;
+ font-family: "Avengeance";
+}
+
 .title {
   font-size: 36px;
   text-shadow: 2px 2px 2px gray;
   text-align: center;
   font-family: "The Amazing Spider-Man";
   color: red;
-  padding: 10px;
+  margin: 0;
+  padding: 15px;
 }
+
 #main-page{
   /*background-image: url("img/background4.jpg");*/
   background-position: center;
@@ -14,12 +35,33 @@
   background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 10px;
-
+  border-radius: 5%;
 }
 #question-page{
   background-color: rgba(0, 0, 0, 0.8);
-  text-align: center;
+  border-radius: 15px;
+}
+
+.question{
+  background-color: rgba(229, 224, 224, 1);
+  padding: 20px;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+}
+
+.question-data{
   padding: 10px;
+}
+
+#question-update{
+  text-align: center;
+  padding-top: 10px;
+}
+
+#update-button{
+  padding-top: 10px;
+  display:block;
+  margin: 0 auto;
 }
 
 #footer {
@@ -33,32 +75,10 @@
   color: lightgray;
 }
 
-.question {
-  color: lightgray;
-  font-size: 22px;
-}
-
-.jumbotron {
-  text-align: center;
-  background-image: url("img/background3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: inherit;;
-  background-size: cover;
-  /*box-shadow: -10px 10px 10px;*/
-  /*opacity: 0.9;*/
-  color: lightgray;
-  height: 18vh;
-}
-
 img {
   width: 20%;
 }
 
-#site-title {
-  font-family: "Avengeance";
-  font-size: 60px;
-}
 
 body {
   background-image: url("img/marvel2.jpg");
