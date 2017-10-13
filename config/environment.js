@@ -17,11 +17,12 @@ module.exports = function(environment) {
       }
     },
     firebase: {
-      apiKey: "AIzaSyDu7MxyCRYhQhXHPpiBqCmebjccEzbvW60",
-      authDomain: "message-board-a8b3b.firebaseapp.com",
-      databaseURL: "https://message-board-a8b3b.firebaseio.com",
-      storageBucket: "message-board-a8b3b.appspot.com",
-      messagingSenderId: "392691366157"
+      apiKey: "AIzaSyC-_RWgoj1I0VLsj6uj1R5PIWsHG6Khi1k",
+      authDomain: "message-board-62c3b.firebaseapp.com",
+      databaseURL: "https://message-board-62c3b.firebaseio.com",
+      projectId: "message-board-62c3b",
+      storageBucket: "message-board-62c3b.appspot.com",
+      messagingSenderId: "389520243067"
     },
 
     APP: {
