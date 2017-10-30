@@ -13,7 +13,6 @@ export default Ember.Component.extend({
         date: this.get('date'),
         question: this.get('question')
       };
-      console.log(params);
       this.set('addAnswer', false);
       this.sendAction('saveAnswer', params);
     }

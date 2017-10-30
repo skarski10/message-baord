@@ -3,6 +3,10 @@
   src: url('The Amazing Spider-Man.ttf');
 }
 
+html, body {
+    height: 100%;
+}
+
 .jumbotron {
   opacity: 0.9;
   background-color: rgba(0, 0, 0, 0.8);
